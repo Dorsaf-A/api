@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FcManager,FcKindle,FcAddressBook } from "react-icons/fc";
 import axios from "axios";
 import './App.css'
 
@@ -18,7 +19,11 @@ function App() {
    <ul>
      {data.map(item => (
        <li key={item.id}>
-         <a href={item.website}>{item.username}</a>
+         <ul className='details'>
+         <li><FcManager/><b>Name :</b> {item.name}  </li>
+         <li>  <FcKindle/>  <b>User Name :</b> {item.username}  </li>
+         <li>  <FcAddressBook/>   <b>Email :</b> {item.email}</li>
+         </ul>
        </li>
      ))}
    </ul>
