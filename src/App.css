@@ -1,0 +1,22 @@
+div {
+  text-align: center;
+}
+
+
+
+h2 {
+  margin: 0%;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+}
+
+ul{
+  text-align: center;
+  list-style: none;
+  font-size: 24px;
+}
