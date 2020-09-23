@@ -18,11 +18,11 @@ function App() {
  <h2>List of users :</h2>
    <ul>
      {data.map(item => (
-       <li key={item.id}>
+       <li key={item.id} >
          <ul className='details'>
          <li><FcManager/><b>Name :</b> {item.name}  </li>
-         <li>  <FcKindle/>  <b>User Name :</b> {item.username}  </li>
-         <li>  <FcAddressBook/>   <b>Email :</b> {item.email}</li>
+         <li className='space'>  <FcKindle/>  <b>User Name :</b> {item.username}  </li>
+         <li className='space'>  <FcAddressBook/>   <b>Email :</b> {item.email}</li>
          </ul>
        </li>
      ))}
